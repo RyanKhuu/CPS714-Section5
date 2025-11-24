@@ -1,0 +1,98 @@
+.applicantlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 1200px;
+    background: white;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.applicantlist-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1f3a93;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+}
+
+thead tr {
+    background-color: #770737;
+    color: white;
+}
+
+th {
+    padding: 15px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: white;
+} 
+td {
+    padding: 15px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: black;
+}
+
+tbody tr:hover {
+    background-color: #601f9e;
+}
+
+.applicant-btn {
+    padding: 6px 12px;
+    margin-right: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.applicant-btn:nth-child(1){
+    background-color: #27ae60;
+}
+
+.applicant-btn:nth-child(1):hover {
+    background-color: #1e8c4d;
+}
+
+.applicant-btn:nth-child(2){
+    background-color: #c0392b;
+}
+
+.applicant-btn:nth-child(2):hover {
+    background-color: #992d22;
+}
+
+.back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: darkcyan;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #888;
+    transform: translateY(-1px);
+}
