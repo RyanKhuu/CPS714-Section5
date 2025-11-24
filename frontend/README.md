@@ -1,75 +1,40 @@
-# React + TypeScript + Vite
+# Section 5 Group 7
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+We created the admin dashboard for the LibraLite web application using:
+Typescript - Frontend
+Firebase - Database
+Express + Node - Backednd
 
-Currently, two official plugins are available:
+## Tasks:
+For our tasks we had to create a dashboard that allowed the following:
+1. Allow for administrators to delete existing users, or accept/decline applicants
+2. System metric overiew where administrators can see key metrics
+3. Give a list of all the overdue books and the users who signed them out
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Installation and how to run the app
+1. Clone the repository:
+```bash
+git clone https://github.com/RyanKhuu/CPS714-Section5.git
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Intall the dependancies:
+```bash
+npm install
 ```
+To run the app you have to make sure that the current working directory is the frontend folder.
+```bash
+cd frontend
+
+npm run dev
+```
+## Web Pages Directory
+All the webpages are located in Pages directory
+
+## Components Directory
+Files in the components are reusable components that can be used by other webpages
+
+## Firebase Directory
+Contains files that directly communicate with the Firebase database and their related functions
+
+## Types Directory 
+Holds the file that specifies the database table structure stored in firebase

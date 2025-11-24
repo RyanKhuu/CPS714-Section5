@@ -1,7 +1,7 @@
 import "./MembersList.css";
 import type { Dispatch, SetStateAction } from "react";
 import { deleteMember } from "../firebase/membersApi";
-import { useMembers } from "../hooks/useMembers"; 
+import { useMembers } from "../firebase/useMembers"; 
 
 interface Props {
   setSection: Dispatch<SetStateAction<"menu" | "members" | "applicants">>;

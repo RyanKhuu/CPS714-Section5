@@ -1,6 +1,6 @@
 import "./ApplicantList.css";
 import type { Dispatch, SetStateAction } from "react";
-import { useApplicants } from "../hooks/useApplicants"; 
+import { useApplicants } from "../firebase/useApplicants"; 
 import type { Member } from "../types/databaseTypes"; 
 import { deleteApplicant, approveApplicant } from "../firebase/applicantApi";
 
