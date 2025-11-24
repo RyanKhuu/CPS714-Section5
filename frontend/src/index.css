@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: linear-gradient(to-right, #3f3f42, #80d61e75);
+  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,9 +26,11 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  display: block; /* remove flex centering */
-  /* use this to change background colour gradient */
-  background: linear-gradient(135deg, #7b3c3c, #1518d7); 
+
+  display: flex;
+  place-items: center;
+
+  background: linear-gradient(to bottom, #D8B4FF, #7C3AED); /* dark mode gradient */
   color: white;
 }
 
@@ -44,12 +46,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #ffffff;
+  background-color: #1a1a1a; /* dark mode button */
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #fafafa;
+  border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
@@ -58,7 +60,7 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #ffffff;
+    color: #213547;
     background-color: #ffffff;
   }
   a:hover {
