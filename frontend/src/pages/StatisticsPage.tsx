@@ -2,8 +2,11 @@ import DailyCheckouts from "./DailyCheckouts";
 import PopularItems from "./PopularItems";
 import NewRegistrations from "./NewRegistrations";
 
+interface Props {
+  setPage: (page: "home" | "member" | "analytics" | "overdue") => void;
+}
 
-export default function StatisticsPage() {
+export default function StatisticsPage({ setPage }: Props) {
   return (
   
     <div style={{
@@ -33,11 +36,11 @@ export default function StatisticsPage() {
         <PopularItems />
       </section>
 
-      {/* Table section – placeholder for now */}
       <section style={{ marginTop: "32px" }}>
         <h2 style={{ textAlign: "center" }}>New Registrations</h2>
          <NewRegistrations/>
       </section>
+      <button className= "back-btn" onClick={() => setPage("home")}>Back to Dashboard</button>
     </div>
     </div>
   );

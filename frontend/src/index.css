@@ -30,7 +30,7 @@ body {
   display: flex;
   place-items: center;
 
-  background: linear-gradient(to bottom, #D8B4FF, #7C3AED); /* dark mode gradient */
+  background: linear-gradient(to bottom, #D8B4FF, #7C3AED);
   color: white;
 }
 
@@ -46,7 +46,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a; /* dark mode button */
+  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
